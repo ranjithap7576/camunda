@@ -1,4 +1,4 @@
-package com.auberon.cafm.swagger;
+package com.camunda.engine.swagger;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

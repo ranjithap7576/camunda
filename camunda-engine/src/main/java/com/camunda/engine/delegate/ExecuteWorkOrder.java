@@ -1,4 +1,4 @@
-package com.auberon.cafm.delegate;
+package com.camunda.engine.delegate;
 
 import org.camunda.bpm.engine.delegate.DelegateExecution;
 import org.camunda.bpm.engine.delegate.JavaDelegate;
