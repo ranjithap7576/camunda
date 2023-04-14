@@ -1,0 +1,23 @@
+version: "2.1"
+services:
+  postgres:
+    container_name: camunda-postgres
+    image: postgres
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgresdata:/data/postgres
+      - postgresdbdata:/var/lib/postgresql/data
+
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+      - POSTGRES_DB=camunda
+
+volumes:
+  postgresdata:
+    driver: local
+  postgresdbdata:
+    driver: local
+
+
