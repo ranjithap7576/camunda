@@ -30,7 +30,7 @@ dependencies {
     testImplementation 'org.springframework.boot:spring-boot-starter-test:2.7.3'
 }
 
-group = 'com.auberon.cafm'
+group = 'com.camunda.example'
 version = '0.0.1-SNAPSHOT'
 description = 'camunda-engine'
 java.sourceCompatibility = JavaVersion.VERSION_1_8
