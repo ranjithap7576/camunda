@@ -4,14 +4,12 @@
 
 plugins {
     id 'java'
-    id 'maven-publish'
+	id 'org.springframework.boot' version '2.7.3'
 }
 
 repositories {
     mavenLocal()
-    maven {
-        url = uri('https://repo.maven.apache.org/maven2/')
-    }
+    mavenCentral()
 }
 
 dependencies {
@@ -35,13 +33,7 @@ version = '0.0.1-SNAPSHOT'
 description = 'camunda-engine'
 java.sourceCompatibility = JavaVersion.VERSION_1_8
 
-publishing {
-    publications {
-        maven(MavenPublication) {
-            from(components.java)
-        }
-    }
-}
+
 
 tasks.withType(JavaCompile) {
     options.encoding = 'UTF-8'
